@@ -24,3 +24,13 @@ export const STORAGE_KEYS = {
   password: 'signin_password',
   cart: 'cart'
 };
+
+/* Api */
+export const apiKey = 'e8ae59d95e445da13e5a518624ac0972'
+export const imagePath = 'https://image.tmdb.org/t/p/original'
+
+/* Movies */
+export const MOVIES_LOADING = 'MOVIES_LOADING'
+export const SET_MOVIES_LIST = 'SET_MOVIES_LIST'
+export const SET_SELECTED_MOVIE = 'SET_SELECTED_MOVIE'
+export const SET_SIMILAR_MOVIES = 'SET_SIMILAR_MOVIES'

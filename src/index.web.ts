@@ -1,12 +1,12 @@
 import { FSApp, FSAppTypes } from '@brandingbrand/fsapp';
 import screens from './screens';
 import reducers from './reducers';
-import {
-  loadAccountData,
-  loadCartData,
-  loadPromoProducts,
-  loadTopCategories
-} from './lib/globalDataLoaders';
+// import {
+//   loadAccountData,
+//   loadCartData,
+//   loadPromoProducts,
+//   loadTopCategories
+// } from './lib/globalDataLoaders';
 import Analytics from './lib/analytics';
 
 const projectEnv = require('../env/env');
@@ -14,7 +14,7 @@ const projectEnv = require('../env/env');
 const appConfig: FSAppTypes.AppConfigType = {
   packageJson: require('../package.json'),
   appType: 'singleScreen',
-  screen: { screen: 'Shop', title: 'Pirate Ship' },
+  screen: { screen: 'Home', title: 'Pirate Ship' },
   screens,
   reducers,
   env: projectEnv,
@@ -34,7 +34,7 @@ const app = new FSApp(appConfig);
 export default app;
 
 // wait for app initialized
-requestAnimationFrame(loadAccountData);
-requestAnimationFrame(loadCartData);
-requestAnimationFrame(loadTopCategories);
-requestAnimationFrame(loadPromoProducts);
+// requestAnimationFrame(loadAccountData);
+// requestAnimationFrame(loadCartData);
+// requestAnimationFrame(loadTopCategories);
+// requestAnimationFrame(loadPromoProducts);
